@@ -11,6 +11,9 @@
     .shot-box{height:178px;display:flex;align-items:center;justify-content:center;overflow:visible;background:#fff}
     .shot img{width:100%;height:auto;max-height:178px;object-fit:contain;object-position:center;transition:none}
     .shot:hover img{transform:none}
+  /* Public portfolio view: hide the local editing controls and prevent accidental edits. */
+  .topbar button,.tip{display:none!important}
+  [contenteditable="true"]{pointer-events:none!important}
   </style>
 </head>
 <body>
